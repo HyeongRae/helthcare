@@ -64,7 +64,7 @@
       v-for="(person, index) in persons"
       :key="index"
       @click="checkPerson(person.person_id, index)"
-      v-bind:class="{ test: person.detail_active }"
+      v-bind:class="{ fix: person.detail_active }"
     >
       <v-row no-gutters class="text-center">
         <v-col>{{ person.person_id }}</v-col>
